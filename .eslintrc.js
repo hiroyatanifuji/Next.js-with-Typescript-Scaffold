@@ -49,6 +49,7 @@ module.exports = {
     'newline-before-return': 'error',
     'no-console': 'warn',
     'require-yield': 'error',
+    'camelcase': [2, {'properties': 'never'}],
 
     // @typescript-eslint
     '@typescript-eslint/explicit-function-return-type': 'off',
@@ -56,7 +57,8 @@ module.exports = {
     indent: 'off',
     '@typescript-eslint/indent': 'off',
     '@typescript-eslint/no-unnecessary-type-assertion': 'error',
-    "@typescript-eslint/no-unused-vars": "error",
+    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/camelcase': 'off',
 
     // prefer-arrow
     'prefer-arrow/prefer-arrow-functions': [
@@ -100,9 +102,9 @@ module.exports = {
     // prettier
     'prettier/prettier': [
       'error', {
-        bracketSpacing: true,
+        bracketSpacing: false,
         printWidth: 80,
-        semi: true,
+        semi: false,
         singleQuote: true,
         trailingComma: 'all',
         useTabs: false
